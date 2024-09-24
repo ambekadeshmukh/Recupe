@@ -21,39 +21,40 @@ This project implements an automated backup and disaster recovery solution for a
 - ## Setup
 
 1. Clone this repository:
-git clone https://github.com/yourusername/backup-dr-solution.git
+git clone https://github.com/ambekadeshmukh/backup-dr-solution.git
 cd backup-dr-solution
-Copy
-2. Set up the development environment:
+
+3. Set up the development environment:
 Follow the instructions in `docs/dev-environment-setup.md`.
 
-3. Deploy the sample application:
+4. Deploy the sample application:
 Follow the instructions in `docs/sample-app-deployment.md`.
 
-4. Set up Bacula:
+5. Set up Bacula:
 Follow the instructions in `docs/bacula-setup.md`.
 
-5. Set up Velero:
+6. Set up Velero:
 Follow the instructions in `docs/velero-setup.md`.
 
-6. Apply Terraform scripts:
+7. Apply Terraform scripts:
 Follow the instructions in `docs/terraform-usage.md`.
 
-7. Run automated tests:
+8. Run automated tests:
 ./test_backup_recovery.sh
-Copy
+
 ## Usage
 
 - To perform a manual Bacula backup:
 sudo bconsole
 run job=BackupJob
-Copy
+
+
 - To create a Velero backup:
 velero backup create my-backup --include-namespaces=note-taking-app
-Copy
+  
 - To restore from a Velero backup:
 velero restore create --from-backup my-backup
-Copy
+
 ## Contributing
 
 Please read `CONTRIBUTING.md` for details on our code of conduct and the process for submitting pull requests.
